@@ -1,1 +1,43 @@
+name: Atualizar lista Pluto TV BR
 
+on:
+  schedule:
+    # A cada 6 horas (00:00, 06:00, 12:00, 18:00 UTC)
+    - cron: "0 */6 * * *"
+  workflow_dispatch:  # Permite execução manual
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Instalar dependências
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Gerar lista M3U
+        run: python generate_m3u.py
+
+      - name: Commit e push (se houver mudanças)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pluto_br.m3u state.json
+          if git diff --staged --quiet; then
+            echo "Nenhuma alteração detectada."
+          else
+            git commit -m "chore: atualiza lista Pluto TV BR ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push
+          fi
