@@ -1,0 +1,930 @@
+{
+  "channels": {
+    "5f120e94a5714d00074576a1": {
+      "name": "Pluto TV Cine Sucessos",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376068+00:00"
+    },
+    "5f120f41b7d403000783a6d6": {
+      "name": "Pluto TV Filmes Ação",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376117+00:00"
+    },
+    "5f12111c9e6c2c00078ef3bb": {
+      "name": "Pluto TV Cine Terror",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376145+00:00"
+    },
+    "5f171d3442a0500007362f22": {
+      "name": "Filmes Suspense",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376164+00:00"
+    },
+    "5fa15ad6367e170007cdd098": {
+      "name": "Pluto TV Ficção Científica",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376205+00:00"
+    },
+    "6479ff764f5ba5000878dfe2": {
+      "name": "Pluto TV Cine Crime",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376224+00:00"
+    },
+    "6806d62369aec5b19cd628c0": {
+      "name": "Pluto TV Filmes de Luta",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376241+00:00"
+    },
+    "5f12101f0b12f00007844c7c": {
+      "name": "Pluto TV Cine Comédia",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376257+00:00"
+    },
+    "62545ed3dab4380007582f7c": {
+      "name": "Pluto TV Cine Comédia Romântica",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376274+00:00"
+    },
+    "5f171f988ab9780007fa95ea": {
+      "name": "Pluto TV Cine Romance",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376291+00:00"
+    },
+    "5f1210d14ae1f80007bafb1d": {
+      "name": "Pluto TV Cine Drama",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376308+00:00"
+    },
+    "663b9dc7cb3ea10008f1a0ce": {
+      "name": "Pluto TV Bang Bang",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376325+00:00"
+    },
+    "5fa1612a669ba0000702017b": {
+      "name": "Pluto TV Cine Clássicos",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376342+00:00"
+    },
+    "6a5520365badf45d3088b8d8": {
+      "name": "Pluto TV Cine Trapalhões",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376359+00:00"
+    },
+    "66aa67493a4ad2000806d91b": {
+      "name": "Pluto TV Terror Trash",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376375+00:00"
+    },
+    "61b790b985706b00072cb797": {
+      "name": "Adrenalina Pura TV",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376392+00:00"
+    },
+    "66c79a4262e5510008ff68a5": {
+      "name": "Pluto TV Filmes Aventura",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376409+00:00"
+    },
+    "5f171f032cd22e0007f17f3d": {
+      "name": "Pluto TV Cine Família",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376425+00:00"
+    },
+    "5fa991b1f09e020007e78626": {
+      "name": "Pluto TV Cine Inspiração",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376443+00:00"
+    },
+    "5f5a545d0dbf7f0007c09408": {
+      "name": "Pluto TV Filmes Nacionais",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376459+00:00"
+    },
+    "663b9de4f999220008230fa8": {
+      "name": "Pluto TV Netmovies",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376476+00:00"
+    },
+    "62c5d32e2c48f9000715b6e9": {
+      "name": "Runtime",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376493+00:00"
+    },
+    "633dcebd80386500074a2461": {
+      "name": "Filmelier TV",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376509+00:00"
+    },
+    "6a281c0302b6c1c00a1fe570": {
+      "name": "MovieSphere by Lionsgate",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376526+00:00"
+    },
+    "6a7cb5b545b3c0d1f72dcca8": {
+      "name": "Pluto TV Romance de Natal",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376543+00:00"
+    },
+    "6a7cb5950c9f5239c2168f10": {
+      "name": "Pluto TV Natal em Família",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376559+00:00"
+    },
+    "6a7cb568611342bebf046a90": {
+      "name": "Pluto TV Espírito de Natal",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376576+00:00"
+    },
+    "68d193184251718916945fb7": {
+      "name": "Tempero de Fim de Ano",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376595+00:00"
+    },
+    "6474ab5cdc7a760008745008": {
+      "name": "Pluto TV Séries Criminais",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376615+00:00"
+    },
+    "63eb9c5351f5d000085e8d7e": {
+      "name": "CSI: Miami",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376631+00:00"
+    },
+    "69fcc8cfb83300b380051794": {
+      "name": "Blue Bloods",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376648+00:00"
+    },
+    "63eb9fdda995710008991c54": {
+      "name": "NCIS",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376664+00:00"
+    },
+    "67f960c5441853fe50e7afc1": {
+      "name": "Numbers",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376681+00:00"
+    },
+    "6474ab1da51cb80008bfb5f4": {
+      "name": "Pluto TV Séries Ação",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376700+00:00"
+    },
+    "64ff2d8c6625510008c5a512": {
+      "name": "Rookie Blue",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376722+00:00"
+    },
+    "678aa104680721c77c506746": {
+      "name": "The Walking Dead by AMC",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376736+00:00"
+    },
+    "63d2ba2f60bc8f0008981a0e": {
+      "name": "Pluto TV Séries Sci-Fi",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376747+00:00"
+    },
+    "66b3af48d2d50d00083d6936": {
+      "name": "Z Nation",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376757+00:00"
+    },
+    "67e59a6557487a8b7fe73e23": {
+      "name": "A Caçadora de Relíquias",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376767+00:00"
+    },
+    "65f060d84e01740008d7421f": {
+      "name": "Pluto TV Séries Drama",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376778+00:00"
+    },
+    "691627e4a29a6123e400b3e0": {
+      "name": "Pluto TV Séries Novelescas",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376789+00:00"
+    },
+    "67f9602ee173fa5664fafae8": {
+      "name": "Charmed: Jovens Bruxas",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376800+00:00"
+    },
+    "655e5bc94261ca000810cb17": {
+      "name": "Pluto TV Séries Comédia",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376810+00:00"
+    },
+    "6a5520691a435d3dfcda8340": {
+      "name": "O Rei do Bairro",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376821+00:00"
+    },
+    "69c71615a8ef5d7f33e7322e": {
+      "name": "Pluto TV Séries Família",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376832+00:00"
+    },
+    "5ff768b6a4c8b80008498610": {
+      "name": "BET Pluto TV",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376842+00:00"
+    },
+    "64e501eec630a900088ed0f8": {
+      "name": "Clube do Terror",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376853+00:00"
+    },
+    "5f99ac4fded33000078f29ab": {
+      "name": "Pluto TV Star Trek",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376864+00:00"
+    },
+    "69162ad79505d0f3b1ebf07d": {
+      "name": "Jornada nas Estrelas - A Nova Geração",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376875+00:00"
+    },
+    "69162af591700f4c4c135c95": {
+      "name": "Jornada nas Estrelas - Deep Space Nine",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376886+00:00"
+    },
+    "69162b1ef189e235142b17ab": {
+      "name": "Jornada nas Estrelas - Voyager",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376896+00:00"
+    },
+    "5f1212ad1728050007a523b8": {
+      "name": "Pluto TV Retrô",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376907+00:00"
+    },
+    "6aa9606aaf45eb18db1928c4": {
+      "name": "The Nanny",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376917+00:00"
+    },
+    "631fa8dd7f25240007099a40": {
+      "name": "A Feiticeira",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376940+00:00"
+    },
+    "61f1d27a189ed10007b7393e": {
+      "name": "Diff’rent Strokes Arnold",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376960+00:00"
+    },
+    "63eb9dc84e83e70008abea92": {
+      "name": "MacGyver",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376977+00:00"
+    },
+    "62052d3b4eeb740007fbe125": {
+      "name": "O Homem que veio do Céu",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.376995+00:00"
+    },
+    "5ff609de50ab210008025c1b": {
+      "name": "Tokusato",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377012+00:00"
+    },
+    "655e5c4d2c46f3000877a54b": {
+      "name": "Pluto TV Desenhos Clássicos",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377030+00:00"
+    },
+    "68b88ae1943f6fb1fb2ad749": {
+      "name": "Os Smurfs",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377046+00:00"
+    },
+    "69162648d03565d6c8c8df97": {
+      "name": "Inspetor Bugiganga",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377062+00:00"
+    },
+    "677d93f37bffa600080795e7": {
+      "name": "Popeye",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377079+00:00"
+    },
+    "5f512365abe1f50007d3ff56": {
+      "name": "Pluto TV Novelas",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377095+00:00"
+    },
+    "6a281d2bd1e6d3ba6b553c7c": {
+      "name": "Novelíssima",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377111+00:00"
+    },
+    "6a565d9022790c74de2e98f6": {
+      "name": "Amor de Aluguel by Noverama TV",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377128+00:00"
+    },
+    "69c716efeac9a2720ebcaaff": {
+      "name": "Grachi",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377145+00:00"
+    },
+    "6077045b6031bd00078de127": {
+      "name": "MasterChef",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377161+00:00"
+    },
+    "681110afc188aa63faa147e0": {
+      "name": "MasterChef Brasil Profissionais",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377200+00:00"
+    },
+    "681111be5e0764e297fb200e": {
+      "name": "Mais MasterChef Brasil",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377218+00:00"
+    },
+    "6647c0b91050b60008390de4": {
+      "name": "Sony One Shark Tank Brasil",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377235+00:00"
+    },
+    "69fca82395df3283d2b60ef9": {
+      "name": "Topa ou Não Topa EUA",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377251+00:00"
+    },
+    "5f1212fb81e85c00077ae9ef": {
+      "name": "MTV Pluto TV",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377267+00:00"
+    },
+    "6851bdfc9ac48fde5e07f5ae": {
+      "name": "MTV Reality",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377284+00:00"
+    },
+    "6851bb3426beced4f2f67ee6": {
+      "name": "MTV Ink Master",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377300+00:00"
+    },
+    "645111f1d8436e00081bb2bd": {
+      "name": "MTV Drag",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377317+00:00"
+    },
+    "625463563b8ddc0007134aeb": {
+      "name": "MTV Shore",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377333+00:00"
+    },
+    "61a528267e1b8b0007357920": {
+      "name": "MTV Com o Ex",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377352+00:00"
+    },
+    "620fdc7d8a36fc000710e3ba": {
+      "name": "MTV Jovens e Mães",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377368+00:00"
+    },
+    "626c2a3502d84a0007cec817": {
+      "name": "MTV Catfish",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377384+00:00"
+    },
+    "5f6108d8cc331900075e98e4": {
+      "name": "MTV Are you the One?",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377401+00:00"
+    },
+    "66a01e07d2d50d0008100d6a": {
+      "name": "MTV Rocks",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377418+00:00"
+    },
+    "66a01dcb8561260008b0a41d": {
+      "name": "MTV Classic",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377434+00:00"
+    },
+    "6047fbdbbb776a0007e7f2ff": {
+      "name": "MTV Biggest Pop",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377451+00:00"
+    },
+    "63dac32bda711800088a2ba3": {
+      "name": "TikTok Radio Brasil",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377468+00:00"
+    },
+    "604b91e0692f770007d9f33f": {
+      "name": "Pluto TV Shows por Stingray",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377485+00:00"
+    },
+    "6a74c036a311e7c50e8c1ba6": {
+      "name": "Stingray Hits Brasileiros",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377508+00:00"
+    },
+    "5f1213ba0ecebc00070e170f": {
+      "name": "Pluto TV Natureza",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377527+00:00"
+    },
+    "681ba2ad93d3d19bcab47433": {
+      "name": "NatureTime",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377544+00:00"
+    },
+    "604a8dedbca75b0007b1c753": {
+      "name": "Pluto TV Paisagens por Stingray",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377561+00:00"
+    },
+    "6474aa984cfc2c0008883a92": {
+      "name": "Pluto TV Animais",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377577+00:00"
+    },
+    "6a74c028c1842722eafad356": {
+      "name": "Stingray Cityscapes",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377593+00:00"
+    },
+    "5f32d4d9ec194100070c7449": {
+      "name": "Pluto TV Vida Real",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377610+00:00"
+    },
+    "656e2a4b4261ca00083aa99e": {
+      "name": "Acumuladores Obsessivos",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377627+00:00"
+    },
+    "69fca7fadf0b6d462c0a0ac3": {
+      "name": "Sobrevivi",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377643+00:00"
+    },
+    "61bb72a7bf8c520007a8fd27": {
+      "name": "Pronto-socorro: Histórias De Emergência",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377664+00:00"
+    },
+    "64ad7394798def00087b2bfe": {
+      "name": "Pluto TV Negócio Fechado",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377680+00:00"
+    },
+    "6014761dfb91870008ea6463": {
+      "name": "Pluto TV Turbo",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377697+00:00"
+    },
+    "6298bd10d88ef000073f16b7": {
+      "name": "Smithsonian Channel Pluto TV",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377714+00:00"
+    },
+    "5f1ef1a8cec6be00072a7ac9": {
+      "name": "Pluto TV História",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377730+00:00"
+    },
+    "5fac52f142044f00078e2a51": {
+      "name": "Pluto TV Mistérios",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377747+00:00"
+    },
+    "6806d65e84f24b70109485fa": {
+      "name": "Pluto TV Aliens",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377764+00:00"
+    },
+    "620d1512c7986a0007220213": {
+      "name": "Assombrações",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377781+00:00"
+    },
+    "656e2a81954b020008ed17a4": {
+      "name": "Estado Paranormal",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377797+00:00"
+    },
+    "656e2a10954b020008ed167c": {
+      "name": "Caçadores de Óvnis",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377814+00:00"
+    },
+    "5f32cf37c9ff2b00082adbc8": {
+      "name": "Pluto TV Investigação",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377831+00:00"
+    },
+    "678fdf9e3de7c8cf948e8824": {
+      "name": "Pluto TV Policial",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377847+00:00"
+    },
+    "620d12a82e8ac50007c269c3": {
+      "name": "Os Arquivos do FBI",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377864+00:00"
+    },
+    "638df93ae2f2a3000737c168": {
+      "name": "Detetives Médicos",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377880+00:00"
+    },
+    "62b5c5a064163d0007b2efe6": {
+      "name": "Mistérios sem Solução",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377897+00:00"
+    },
+    "679a973a97782f0008ff4bb6": {
+      "name": "Times Brasil | CNBC",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377914+00:00"
+    },
+    "62310f66d5888f0007534342": {
+      "name": "CBS News 24/7",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377931+00:00"
+    },
+    "666c9c60a7efd40008f552f0": {
+      "name": "BM&C News",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377947+00:00"
+    },
+    "619e6614c9d9650007a2b171": {
+      "name": "Euronews Português",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377964+00:00"
+    },
+    "6102e04e9ab1db0007a980a1": {
+      "name": "Pluto TV Record News",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377980+00:00"
+    },
+    "6317ba014d4d040007227f72": {
+      "name": "Jovem Pan NEWS",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.377997+00:00"
+    },
+    "62e010e6cd663f0007e57dc8": {
+      "name": "TV Cultura",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378013+00:00"
+    },
+    "64b9370b409629000802d32b": {
+      "name": "Pluto TV Canal UOL",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378030+00:00"
+    },
+    "698392af0cca0cc3458666ab": {
+      "name": "AdoroCinema",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378047+00:00"
+    },
+    "5f32d2db0af67400077f29c4": {
+      "name": "Pluto TV Esportes",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378063+00:00"
+    },
+    "68ee7a1c177d2e7dd453b5fa": {
+      "name": "SportyNet",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378079+00:00"
+    },
+    "6888ee858f4a4aa11feb9430": {
+      "name": "Barça 24H",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378097+00:00"
+    },
+    "66997e8d3a4ad20008e50be9": {
+      "name": "FIFA+",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378114+00:00"
+    },
+    "67813f3162bf016db944c9ab": {
+      "name": "Red Bull TV",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378131+00:00"
+    },
+    "65a6818c7bdc8d0008457b21": {
+      "name": "RACER Brasil",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378148+00:00"
+    },
+    "69a20556814d27f4ae630a92": {
+      "name": "UFC",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378165+00:00"
+    },
+    "6660b636cb3ea10008429c6a": {
+      "name": "SFT Combat",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378200+00:00"
+    },
+    "64f6180130ab3300083d896b": {
+      "name": "PFL MMA",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378218+00:00"
+    },
+    "6a68dc0a75fd5e3828f10b10": {
+      "name": "NFL Channel",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378235+00:00"
+    },
+    "63eba66da8b2270008436b10": {
+      "name": "World Poker Tour",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378253+00:00"
+    },
+    "65df71008b24c80008f04281": {
+      "name": "South Park: Coleção Cartman",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378270+00:00"
+    },
+    "65df704366eec8000898e32f": {
+      "name": "South Park: Coleção Kenny",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378290+00:00"
+    },
+    "65df713dec9fda0008b7a81d": {
+      "name": "South Park: Coleção Kyle",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378306+00:00"
+    },
+    "65df70b0f7f0af0008c3b316": {
+      "name": "South Park: Coleção Stan",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378323+00:00"
+    },
+    "609ae66b359b270007869ff1": {
+      "name": "Comedy Central South Park",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378342+00:00"
+    },
+    "69fca7dd2387729708faa32c": {
+      "name": "Mr. Bean",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378359+00:00"
+    },
+    "5f357e91b18f0b00073583d2": {
+      "name": "Comedy Central Pluto TV",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378375+00:00"
+    },
+    "69440d0611f6c6384ab78306": {
+      "name": "PORTATV",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378392+00:00"
+    },
+    "67802a22a5d8215f99dcee30": {
+      "name": "Pegadinhas - Just for Laughs",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378409+00:00"
+    },
+    "5f5141c1605ddf000748eb1b": {
+      "name": "FailArmy",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378428+00:00"
+    },
+    "5f515ebac01c0f00080e8439": {
+      "name": "The Pet Collective",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378449+00:00"
+    },
+    "6932decb96b4427d18426909": {
+      "name": "Caras TV",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378463+00:00"
+    },
+    "66a7d0e0cd0d310008448610": {
+      "name": "Salon Line",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378474+00:00"
+    },
+    "5f32d432d612e50007e56133": {
+      "name": "Pluto TV Viagens",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378485+00:00"
+    },
+    "67603668f433320008760af1": {
+      "name": "Homeful",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378495+00:00"
+    },
+    "5f1ef23020a5ac0007e5e8ea": {
+      "name": "Pluto TV Cozinha",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378506+00:00"
+    },
+    "633ee9ba83c08f00076b60a6": {
+      "name": "Pluto TV KFOOD",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378520+00:00"
+    },
+    "5fd1419a3b4f4b000773ba85": {
+      "name": "Tastemade Food",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378531+00:00"
+    },
+    "68b88821e542386ab0bf5bef": {
+      "name": "Tastemade Casa",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378542+00:00"
+    },
+    "68b8875777201ec428d9eaa5": {
+      "name": "Tastemade Viagem",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378553+00:00"
+    },
+    "61099df8cee03b00074b2ecf": {
+      "name": "O Encantador de Cães",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378564+00:00"
+    },
+    "5f12136385bccc00070142ed": {
+      "name": "Pluto TV Anime",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378575+00:00"
+    },
+    "604b79c558393100078faeef": {
+      "name": "Pluto TV Anime Ação",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378585+00:00"
+    },
+    "687007a8ee4155e89a8f6d67": {
+      "name": "Pokémon",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378595+00:00"
+    },
+    "5f6df5a173d7340007c559f7": {
+      "name": "Naruto",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378606+00:00"
+    },
+    "64c92f965580090008084968": {
+      "name": "Naruto Shippuden",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378616+00:00"
+    },
+    "656f389c3944b60008e5bdab": {
+      "name": "Boruto: Naruto Next Generations",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378626+00:00"
+    },
+    "65d9167818036500080e8780": {
+      "name": "Hunter x Hunter",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378637+00:00"
+    },
+    "625464a945b6a200079257d1": {
+      "name": "Death Note",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378647+00:00"
+    },
+    "66c7982f6838ee00085f0d24": {
+      "name": "JoJo’s Bizarre Adventure",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378658+00:00"
+    },
+    "63988c2750108d00072e2686": {
+      "name": "Super Onze",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378669+00:00"
+    },
+    "63988a50be012600070f5db3": {
+      "name": "Yu-Gi-Oh",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378679+00:00"
+    },
+    "633dc392e0282400071b0d39": {
+      "name": "Beyblade",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378690+00:00"
+    },
+    "66b26681d2d50d00083abe8b": {
+      "name": "Inuyasha",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378702+00:00"
+    },
+    "624b1c8d4321e200073ee421": {
+      "name": "One Piece",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378713+00:00"
+    },
+    "5f12141b146d760007934ea7": {
+      "name": "Pluto TV Junior",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378723+00:00"
+    },
+    "5f1214a637c6fd00079c652f": {
+      "name": "Pluto TV Kids",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378734+00:00"
+    },
+    "66c8cae7fed35b0008580ec0": {
+      "name": "Pluto TV Kids Club",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378744+00:00"
+    },
+    "5f997e44949bc70007a6941e": {
+      "name": "Turma da Mônica",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378754+00:00"
+    },
+    "5f5c216df68f920007888315": {
+      "name": "O Reino Infantil",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378765+00:00"
+    },
+    "63221bafdc6e110007b50270": {
+      "name": "Oggy e as Baratas Tontas",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378775+00:00"
+    },
+    "63eba189c111bc0008ff59c5": {
+      "name": "Moranguinho",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378786+00:00"
+    },
+    "62d969fd8451a30007f0fd94": {
+      "name": "Cocoricó",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378798+00:00"
+    },
+    "63da6bcd60bc8f0008a5d364": {
+      "name": "Baby Shark TV",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378810+00:00"
+    },
+    "645951c0e94c38000802d2cb": {
+      "name": "Nickelodeon Toons",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378820+00:00"
+    },
+    "6824ce10c5d53e1351ceb8d1": {
+      "name": "Nickelodeon Clássico",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378831+00:00"
+    },
+    "62545c0b002f4b0007688b61": {
+      "name": "Bob Esponja Calça Quadrada",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378841+00:00"
+    },
+    "63221e41af69b500076f84e7": {
+      "name": "Os Padrinhos Mágicos",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378852+00:00"
+    },
+    "63dd5c904e83e700088fb68a": {
+      "name": "As Tartarugas Ninja",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378862+00:00"
+    },
+    "6759eeb1bd523200083b4f29": {
+      "name": "Avatar: A lenda de Aang",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378873+00:00"
+    },
+    "66b4e477d512590008ca6849": {
+      "name": "Hey Arnold!",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378884+00:00"
+    },
+    "6824ce95f09106f4b18f4114": {
+      "name": "Nick Jr. Club",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378894+00:00"
+    },
+    "656e28dd57fe4a0008819c3d": {
+      "name": "Dora, A Aventureira",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378905+00:00"
+    },
+    "60f5fabf0721880007cd50e3": {
+      "name": "Nickelodeon Teen",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378915+00:00"
+    },
+    "620ff46e0a576e0007dc2f89": {
+      "name": "Nickelodeon iCarly",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378925+00:00"
+    },
+    "5ffcc5130fd98c0007f2e216": {
+      "name": "Kenan & Kel",
+      "fails": 0,
+      "last_seen": "2026-11-12T16:49:13.378936+00:00"
+    }
+  },
+  "last_update": "2026-11-12T16:49:13.379016+00:00"
+}
