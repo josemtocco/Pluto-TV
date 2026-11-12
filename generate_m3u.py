@@ -2,12 +2,11 @@
 """
 Pluto TV Brasil - Gerador de lista M3U otimizada para SS IPTV (Com Redirecionador)
 Atualiza a cada 6h via GitHub Actions.
-Mantém canais que ainda funcionam; só remove após 3 falhas consecutivas.
+Correção: Inclui clientID e deviceId na URL para validar o JWT corretamente.
 """
 import json
 import os
 import sys
-import time
 import uuid
 import urllib.parse
 from datetime import datetime, timezone
@@ -17,15 +16,14 @@ import requests
 
 # ── Configuração ──────────────────────────────────────────────────────────────
 REGION = "br"
-BR_IP = "177.192.255.38"          # IP brasileiro para geo-spoof
-MAX_FAILS = 3                     # Remove só após 3 atualizações com falha
+BR_IP = "177.192.255.38"          
+MAX_FAILS = 3                     
 CHECK_STREAMS = os.environ.get("CHECK_STREAMS", "0") == "1"
 
-# URL do seu redirecionador (Cloudflare Worker). 
-# Pode ser definida via GitHub Secret: REDIRECTOR_BASE_URL
+# URL do seu redirecionador Cloudflare Worker
 REDIRECTOR_BASE_URL = os.environ.get(
     "REDIRECTOR_BASE_URL", 
-    "https://seu-worker-exemplo.workers.dev" # Substitua pelo seu domínio real
+    "https://restless-resonance-dba9.bepigaucho.workers.dev" # Mantenha ou altere se tiver outro
 )
 
 STATE_FILE = Path("state.json")
@@ -56,7 +54,6 @@ def save_state(state: Dict[str, Any]) -> None:
         json.dump(state, f, ensure_ascii=False, indent=2)
 
 def boot_session() -> Optional[Dict[str, Any]]:
-    """Obtém sessionToken + stitcher via boot.pluto.tv (anônimo)."""
     device_id = str(uuid.uuid4())
     params = {
         "appName": "web",
@@ -142,21 +139,42 @@ def fetch_categories(session: Dict[str, Any]) -> Dict[str, str]:
         print(f"Aviso: categorias não carregadas ({e})", file=sys.stderr)
         return {}
 
-def build_short_stream_url(session: Dict[str, Any], channel: Dict[str, Any]) -> Optional[str]:
-    """Monta URL curta de redirecionamento para SS IPTV."""
-    cid = str(channel.get("id") or channel.get("_id") or "")
+def build_stream_url(session: Dict[str, Any], channel: Dict[str, Any]) -> Optional[str]:
+    stitched = channel.get("stitched") or {}
+    path = stitched.get("path") or stitched.get("url")
+    
+    cid = channel.get("id") or channel.get("_id")
     if not cid:
         return None
+        
+    if not path:
+        path = f"/v2/stitch/hls/channel/{cid}/master.m3u8"
+    elif not path.startswith("/v2"):
+        path = "/v2" + path if path.startswith("/") else f"/v2/{path}"
+        
+    # Remove query string existente para reconstruir com os parâmetros corretos e válidos
+    base_path = path.split("?")[0]
+    base = session["stitcher"].rstrip("/")
+    device_id = session["device_id"]
     
-    jwt_token = session.get("token")
-    if not jwt_token:
-        return None
-
-    # Codifica o token para ser seguro em URLs
-    encoded_jwt = urllib.parse.quote(jwt_token)
+    # Parâmetros OBRIGATÓRIOS para o JWT ser validado pelo servidor da Pluto TV
+    query_params = [
+        f"appName=web",
+        f"appVersion=8.1.0",
+        f"clientID={device_id}",
+        f"deviceId={device_id}",
+        f"deviceMake=chrome",
+        f"deviceModel=web",
+        f"deviceType=web",
+        f"deviceVersion=133.0.0",
+        f"country=BR",
+        f"marketingRegion=BR",
+        f"serverSideAds=false",
+        f"jwt={session['token']}",
+        "masterJWTPassthrough=true"
+    ]
     
-    # Gera a URL curta que o SS IPTV consegue ler
-    return f"{REDIRECTOR_BASE_URL}/play?id={cid}&jwt={encoded_jwt}"
+    return f"{base}{base_path}?{'&'.join(query_params)}"
 
 def check_stream(url: str, timeout: int = 5) -> bool:
     headers = {"User-Agent": USER_AGENT, "Range": "bytes=0-1023"}
@@ -206,7 +224,7 @@ def normalize_group(name: str) -> str:
             return f"Pluto TV | {pt}"
     return f"Pluto TV | {n}"
 
-def generate_m3u(channels: List[Dict[str, Any]], categories: Dict[str, str], session: Dict[str, Any]) -> str:
+def generate_m3u(channels: List[Dict[str, Any]], categories: Dict[str, str]) -> str:
     lines = [
         "#EXTM3U",
         '#EXT-X-SESSION-DATA:DATA-ID="com.xui.note",VALUE="Pluto TV Brasil - Redirecionador Ativo"',
@@ -221,8 +239,7 @@ def generate_m3u(channels: List[Dict[str, Any]], categories: Dict[str, str], ses
         group = normalize_group(categories.get(cid, ch.get("category") or "Geral"))
         number = ch.get("number") or ""
         
-        # Gera a URL CURTA usando o redirecionador
-        stream = build_short_stream_url(session, ch)
+        stream = ch.get("_stream_url_short")
         if not stream:
             continue
 
@@ -239,7 +256,7 @@ def generate_m3u(channels: List[Dict[str, Any]], categories: Dict[str, str], ses
     return "\n".join(lines)
 
 def main() -> int:
-    print("=== Pluto TV BR → M3U (Com Redirecionador) ===")
+    print("=== Pluto TV BR → M3U (SS IPTV com Redirecionador) ===")
     print(f"Região: {REGION.upper()} | IP spoof: {BR_IP}")
     print(f"Redirecionador: {REDIRECTOR_BASE_URL}")
     
@@ -269,11 +286,16 @@ def main() -> int:
             continue
         current_ids.add(cid)
         
-        # Para verificação de stream, precisamos da URL real (longa)
-        long_url = f"{session['stitcher'].rstrip('/')}/v2/stitch/hls/channel/{cid}/master.m3u8?appName=web&appVersion=1.0&deviceId={session['device_id']}&jwt={session['token']}&masterJWTPassthrough=true"
+        full_url = build_stream_url(session, ch)
+        if not full_url:
+            continue
+            
+        # Codifica a URL completa para passar ao Worker de forma segura
+        encoded_url = urllib.parse.quote(full_url, safe='')
+        short_url = f"{REDIRECTOR_BASE_URL}/play?url={encoded_url}"
         
         if CHECK_STREAMS:
-            is_ok = check_stream(long_url)
+            is_ok = check_stream(full_url)
             if not is_ok:
                 entry = prev.get(cid, {"fails": 0})
                 fails = entry.get("fails", 0) + 1
@@ -281,15 +303,25 @@ def main() -> int:
                     print(f"  ✗ Removendo (stream falhou {fails}x): {ch.get('name')}")
                     continue
                 print(f"  ! Mantendo com {fails} falha(s) de stream: {ch.get('name')}")
+                ch["_stream_url_short"] = short_url
                 ch["_fails"] = fails
                 healthy.append(ch)
-                prev[cid] = {**prev.get(cid, {}), "fails": fails, "last_seen": datetime.now(timezone.utc).isoformat()}
+                prev[cid] = {
+                    "name": ch.get("name"),
+                    "stream_short": short_url,
+                    "logo": get_logo(ch),
+                    "fails": fails,
+                    "last_seen": datetime.now(timezone.utc).isoformat(),
+                }
                 continue
         
+        ch["_stream_url_short"] = short_url
         ch["_fails"] = 0
         healthy.append(ch)
         prev[cid] = {
             "name": ch.get("name"),
+            "stream_short": short_url,
+            "logo": get_logo(ch),
             "fails": 0,
             "last_seen": datetime.now(timezone.utc).isoformat(),
         }
@@ -303,17 +335,38 @@ def main() -> int:
             del prev[cid]
             continue
         print(f"  ! Mantendo antigo com {fails} falha(s): {entry.get('name')}")
-        prev[cid] = {**entry, "fails": fails}
+        ghost = {
+            "id": cid,
+            "name": entry.get("name", cid),
+            "colorLogoPNG": {"path": entry.get("logo", "")},
+            "_stream_url_short": entry.get("stream_short"),
+            "_fails": fails,
+        }
+        healthy.append(ghost)
+        prev[cid] = {**entry, "fails": fails, "last_seen": entry.get("last_seen")}
 
-    healthy.sort(key=lambda c: (0, int(c.get("number") or 0)) if str(c.get("number") or "").isdigit() else (1, (c.get("name") or "").lower()))
+    def sort_key(c):
+        num = c.get("number")
+        try:
+            return (0, int(num))
+        except (TypeError, ValueError):
+            return (1, (c.get("name") or "").lower())
+    
+    healthy.sort(key=sort_key)
     
     state["channels"] = prev
     save_state(state)
     
-    m3u_content = generate_m3u(healthy, categories, session)
+    m3u_content = generate_m3u(healthy, categories)
     OUTPUT_M3U.write_text(m3u_content, encoding="utf-8")
     print(f"\n✓ M3U gerado: {OUTPUT_M3U} ({len(healthy)} canais)")
     print(f"✓ Estado salvo: {STATE_FILE}")
+    
+    if healthy:
+        sample = healthy[0].get("_stream_url_short", "")
+        print(f"\n📋 Exemplo de URL curta gerada:")
+        print(f"   {sample[:120]}...")
+    
     return 0
 
 if __name__ == "__main__":
