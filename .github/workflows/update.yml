@@ -28,6 +28,9 @@ jobs:
           pip install requests
 
       - name: Gerar lista M3U
+        env:
+          # Defina em Settings > Secrets and variables > Actions > Variables
+          PLAY_BASE: ${{ vars.PLAY_BASE }}
         run: python generate_m3u.py
 
       - name: Commit e push (se houver mudanças)
