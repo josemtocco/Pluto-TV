@@ -1,5 +1,5 @@
 #EXTM3U
-# Generated: 2026-11-27 15:59:54 UTC
+# Generated: 2026-11-28 00:58:50 UTC
 # Source: https://pluto.tv/br/watch/live-tv/
 
 #EXTINF:-1 tvg-id="5f120e94a5714d00074576a1" tvg-name="Pluto TV Cine Sucessos" tvg-logo="https://images.pluto.tv/channels/5f120e94a5714d00074576a1/colorLogoPNG_1785430162956.png" tvg-chno="18" group-title="Pluto TV | Filmes",Pluto TV Cine Sucessos
@@ -497,7 +497,7 @@ https://pluto-br.bepigaucho.workers.dev/624b1c8d4321e200073ee421.m3u8
 #EXTINF:-1 tvg-id="5f12141b146d760007934ea7" tvg-name="Pluto TV Junior" tvg-logo="https://images.pluto.tv/channels/5f12141b146d760007934ea7/colorLogoPNG.png" tvg-chno="1420" group-title="Pluto TV | Infantil",Pluto TV Junior
 https://pluto-br.bepigaucho.workers.dev/5f12141b146d760007934ea7.m3u8
 
-#EXTINF:-1 tvg-id="5f1214a637c6fd00079c652f" tvg-name="Pluto TV Kids" tvg-logo="https://images.pluto.tv/channels/5f1214a637c6fd00079c652f/colorLogoPNG.png" tvg-chno="1421" group-title="Pluto TV | Infantil",Pluto TV Kids
+#EXTINF:-1 tvg-id="5f1214a637c6fd00079c652f" tvg-name="Pluto TV Kids" tvg-logo="https://images.pluto.tv/channels/5f1214a637c6fd00079c652f/colorLogoPNG_1795806408950.png" tvg-chno="1421" group-title="Pluto TV | Infantil",Pluto TV Kids
 https://pluto-br.bepigaucho.workers.dev/5f1214a637c6fd00079c652f.m3u8
 
 #EXTINF:-1 tvg-id="66c8cae7fed35b0008580ec0" tvg-name="Pluto TV Kids Club" tvg-logo="https://images.pluto.tv/channels/66c8cae7fed35b0008580ec0/colorLogoPNG.png" tvg-chno="1422" group-title="Pluto TV | Infantil",Pluto TV Kids Club
@@ -527,7 +527,7 @@ https://pluto-br.bepigaucho.workers.dev/645951c0e94c38000802d2cb.m3u8
 #EXTINF:-1 tvg-id="6824ce10c5d53e1351ceb8d1" tvg-name="Nickelodeon Clássico" tvg-logo="https://images.pluto.tv/channels/6824ce10c5d53e1351ceb8d1/colorLogoPNG_1792528439389.png" tvg-chno="1510" group-title="Pluto TV | Nickelodeon",Nickelodeon Clássico
 https://pluto-br.bepigaucho.workers.dev/6824ce10c5d53e1351ceb8d1.m3u8
 
-#EXTINF:-1 tvg-id="62545c0b002f4b0007688b61" tvg-name="Bob Esponja Calça Quadrada" tvg-logo="https://images.pluto.tv/channels/62545c0b002f4b0007688b61/colorLogoPNG.png" tvg-chno="1511" group-title="Pluto TV | Nickelodeon",Bob Esponja Calça Quadrada
+#EXTINF:-1 tvg-id="62545c0b002f4b0007688b61" tvg-name="Bob Esponja Calça Quadrada" tvg-logo="https://images.pluto.tv/channels/62545c0b002f4b0007688b61/colorLogoPNG_1795805907704.png" tvg-chno="1511" group-title="Pluto TV | Nickelodeon",Bob Esponja Calça Quadrada
 https://pluto-br.bepigaucho.workers.dev/62545c0b002f4b0007688b61.m3u8
 
 #EXTINF:-1 tvg-id="63221e41af69b500076f84e7" tvg-name="Os Padrinhos Mágicos" tvg-logo="https://images.pluto.tv/channels/63221e41af69b500076f84e7/colorLogoPNG.png" tvg-chno="1512" group-title="Pluto TV | Nickelodeon",Os Padrinhos Mágicos
